@@ -23,13 +23,12 @@ public class TodoService {
 		
 	}
 	
-	public List<Todo> retrieveTodos(String user){	
+	public List<Todo> retrieveTodos(){	
 		List<Todo> filteredTodos =new ArrayList<Todo>();
-		for(Todo todo: todos) {
-			if(todo.getUser().contentEquals(user)){
-				filteredTodos.add(todo);
-			}
-		}
+		/*
+		 * for(Todo todo: todos) { if(todo.getUser().contentEquals(user)){
+		 * filteredTodos.add(todo); } }
+		 */
 		return filteredTodos;
 	}
 	
